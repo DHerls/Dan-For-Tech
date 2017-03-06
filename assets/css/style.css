@@ -40,42 +40,28 @@ body {
   content: "\2014 \00A0";
 }
 
-.carousel-indicators {
-  position: absolute;
-  right: 0;
-  bottom: 10px;
-  left: 0;
-  z-index: 15;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 0;
-  margin-right: 15%;
-  margin-left: 15%;
-  list-style: none;
-  margin-top: 3px;
-}
-
 .carousel-indicators li {
-  position: relative;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 0 auto;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-  max-width: 30px;
-  height: 3px;
-  margin-right: 3px;
-  margin-left: 3px;
-  text-indent: -999px;
-  cursor: pointer;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .carousel-indicators .active {
   background-color: rgba(0, 0, 0, 0.75);
+}
+
+.jumbotron {
+	background-image: url(../img/jumbotron.jpeg);
+	background-size: cover;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+#header {
+	background-color: rgba(255,255,255,0.25);
+	
 }
