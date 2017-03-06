@@ -3,19 +3,17 @@ body {
 }
 
 .blockquote {
-	padding: 0.5rem 1rem;
-	margin-bottom: 3rem;
-	font-size: 1.25rem;
 	border-left: 0;
 	text-align: center;
-	display: inline;
-	width: 100%
+	margin: auto;
+	margin-bottom: 3rem;
 }
 
 .blockquote p::before{
 	content: open-quote;
 	font-size: 60pt;
 	text-align: center;
+	float: left;
 	line-height: 25px;
 	position: relative;
 	margin: 0;
@@ -28,6 +26,7 @@ body {
 	text-align: center;
 	line-height: 25px;
 	position: relative;
+	float: right;
 }
 
 .blockquote-footer {
@@ -41,11 +40,11 @@ body {
 }
 
 .carousel-indicators li {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .carousel-indicators .active {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .jumbotron {
@@ -63,5 +62,46 @@ body {
 
 #header {
 	background-color: rgba(255,255,255,0.25);
-	
+}
+
+#clockdiv{
+    font-family: sans-serif;
+    color: #FFC915;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+	background: #66c2ff;
+    font-size: 30px;
+	border-radius: 5px;
+}
+
+#clockdiv > h1 {
+	display: block;
+	font-size: 1.5em;
+	-webkit-margin-before: 0.67em;
+	-webkit-margin-after: 0.1em;
+	-webkit-margin-start: 10px;
+	-webkit-margin-end: 10px;
+	font-weight: bold;
+}
+
+#clockdiv > div{
+    padding: 10px;
+    display: inline-block;
+	background: #1aa3ff;
+	-webkit-margin-end: 5px;
+	-webkit-margin-after: 5px;
+	border-radius: 3px;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #007acc;
+    display: inline-block;
+}
+
+#clockdiv .smalltext{
+    padding-top: 5px;
+    font-size: 16px;
 }
