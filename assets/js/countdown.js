@@ -18,13 +18,13 @@ function updateTimer(){
 		t = getTimeRemaining(start2018);
 		if (t.total <= 0){
 			beforeTHON = false;
-			clockSetup()
+			clockSetup(false)
 		}
 	} else if (!afterTHON){
 		t = getTimeRemaining(end2018);
 		if (t.total <= 0){
 			afterTHON = true;
-			clockSetup()
+			clockSetup(false)
 		}
 	} else {
 		t = getTimeRemaining(start2019);
@@ -35,10 +35,10 @@ function updateTimer(){
 	secondsSpan.innerHTML = t.seconds
 }
 
-function clockSetup(firstTime = false){
-	var html =  "<div id=\"clockdiv\"><h1>"
+function clockSetup(firstTime) {
+	var html =  "<div id=\"clockdiv\"><h1>";
 	html += (beforeTHON || afterTHON ? "COUNTDOWN TO THON" : "HOURS LEFT IN THON");
-	html +="</h1><div><span class=\"days\"></span><div class=\"smalltext\">Days</div></div><div><span class=\"hours\"></span><div class=\"smalltext\">Hours</div></div><div><span class=\"mins\"></span><div class=\"smalltext\">Minutes</div></div><div><span class=\"secs\"></span><div class=\"smalltext\">Seconds</div>  </div></div>"
+	html +="</h1><div><span class=\"days\"></span><div class=\"smalltext\">Days</div></div><div><span class=\"hours\"></span><div class=\"smalltext\">Hours</div></div><div><span class=\"mins\"></span><div class=\"smalltext\">Minutes</div></div><div><span class=\"secs\"></span><div class=\"smalltext\">Seconds</div>  </div></div>";
 	if (firstTime){
 		document.getElementById('countdown').innerHTML = html;
 	} else {
@@ -66,5 +66,5 @@ var secondsSpan;
 
 clockSetup(true);
 
-updateTimer()
+updateTimer();
 setInterval(updateTimer, 1000);
