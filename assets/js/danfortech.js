@@ -34,7 +34,7 @@ $('#numTechChart').on('appear', function(event, $all_appeared_elements) {
 	]);
 	$("#numTechChart").CanvasJSChart({
 		title: {
-			text: "Number of Tech Chairs by Year"
+			text: "Number of Tech Chairs by THON Year"
 		},
 		animationEnabled: true,
 		animationDuration: 2000,
@@ -43,8 +43,9 @@ $('#numTechChart').on('appear', function(event, $all_appeared_elements) {
 		   valueFormatString: "####",
 		 },
 		axisY:{
-			interval: 1,
-			   viewportMaximum: 1.1,
+			interval: .5,
+			viewportMaximum: 1.1,
+			title: "Number of Tech Chairs"
 		},
 		data: [
 		{
