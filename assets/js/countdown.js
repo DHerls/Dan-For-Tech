@@ -53,7 +53,7 @@ function clockSetup(firstTime) {
 		
 var start2018 = "February 16, 2018 6:00 PM GMT-0500";
 var end2018 = "February 18, 2017 4:00 PM GMT-0500"
-var start2019 = "February 15, 2018 6:00 PM GMT-0500";
+var start2019 = "February 15, 2019 6:00 PM GMT-0500";
 
 var beforeTHON = getTimeRemaining(start2018).total >= 0;
 var afterTHON = !beforeTHON && getTimeRemaining(end2018).total <= 0;
